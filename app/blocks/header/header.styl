@@ -1,0 +1,75 @@
+.header
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 100
+  
+  height 80px
+  
+  background #fff
+  border-bottom 1px solid #FCDE2A
+  
+
+  &__inner
+    container($site-width)
+    
+    display flex
+    align-items center
+    justify-content space-between
+    
+    height 80px
+    padding 0 16px
+  
+
+  &__left
+    display flex
+    align-items center
+  
+
+  &__logo
+    position relative
+    top -4px
+    
+    display block
+    margin-right 16px
+    size(136px, 45px)
+    
+    img
+      display block
+      size(136px, 45px)
+  
+  &__title
+    display block
+    
+    font-size 24px
+    line-height 1
+    font-weight 300
+    
+    color #0E1E2E
+  
+
+  &__right
+    display flex
+    align-items center
+  
+
+  &__phone
+    display block
+
+    font-size 24px
+    font-weight 300 
+    line-height 1
+    
+    color #40505E
+    
+
+
+  &__avatar
+    size(40px)
+    margin-left 16px
+    
+    background-image svg('avatar.svg')
+    background-size cover
+    
+    cursor pointer

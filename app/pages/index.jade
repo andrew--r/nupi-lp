@@ -1,0 +1,18 @@
+include ../blocks/header/header
+include ../blocks/hero/hero
+include ../blocks/content/content
+include ../blocks/modal/modal
+
+doctype html
+html(lang='ru')
+  block head
+    - var pageName = 'main'
+    - var pageTitle = "Index"
+  include ../blocks/head/head
+  body
+    +header()
+    +hero()
+    +content()
+    +modal()
+
+    script(src='assets/scripts/build.js')

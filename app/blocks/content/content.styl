@@ -1,0 +1,74 @@
+.content
+  max-width 100%
+  min-width 1024px
+  overflow-x hidden
+  
+  &__inner
+    padding-top 37px
+    padding-bottom 50px
+    
+    border-top 1px solid #D1D3D4
+  
+
+  &__row
+    container($site-width)
+    
+    display flex
+    align-items flex-start
+    
+    &--sb
+      align-items center
+    
+  
+
+  .col
+    position relative
+    unflexible()
+    
+    width 457px
+    
+    &--left
+      padding-left 16px
+      margin-right 20px
+      
+      .content__image
+        right 0
+        
+        &--last
+          right 20px
+          margin-top 20px
+    
+    &--right
+      margin-left 20px
+      padding-right 16px
+      
+      .content__image
+        left 0
+  
+
+  &__image
+    position absolute
+    top 0
+    
+    max-width 9999px
+
+
+  h2
+    margin-top 70px
+    margin-bottom 35px
+    
+    font-size 32px
+    font-weight 300
+    line-height 41px
+    
+    color #414042
+  
+
+  p
+    font-size 17px
+    line-height 27px
+    
+    color #939598
+  
+    & + p
+      margin-top 35px
